@@ -1,0 +1,33 @@
+<!-- Validar se um candidato pode ou não iniciar o processo de CNH -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercício 004</h1>
+    <blockquote>Poderia ser pior!</blockquote>
+    <p>04 Validar se um candidato pode ou não iniciar o processo de CNH</p>
+    <hr>
+
+    <form class="formulario" action="" method="get">
+        <label for="nome">Nome: </label>
+        <input id="nome"> 
+
+        <label for="idade">Idade:</label>
+        <input id="idade"> <br>
+
+
+        <button type="button" onclick="fnValidarCandidato()">Validar Candidato</button>
+        <h3>Resultado: <span id="resultado_cnh"></span></h3>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
