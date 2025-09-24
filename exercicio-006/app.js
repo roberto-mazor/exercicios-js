@@ -4,6 +4,8 @@
 
 // Para deixar mais completo nosso sistema, vamos verificar também se o funcionário está “devendo” horas. Por exemplo, se Pedro tem uma carga horária de 44 horas mas essa semana trabalhou 40, ele está com 4 horas negativas.
 
+// Conforme realiza uma nova consulta vai adicionando os funcionários em uma lista usando id="lista_funcionarios
+
 function fnCalcularHorasExtras() {
     const nome = document.getElementById('nome').value.trim();
     const horasTrabalhadas = parseFloat(document.getElementById('horas_trabalhadas').value);
@@ -17,12 +19,18 @@ function fnCalcularHorasExtras() {
     resultado += `Carga Horária: ${cargaHoraria}\n`;
 
     if (horasExtras > 0) {
-        resultado += `Horas Extras: ${horasExtras}\n`;
+        resultado += `😁 Horas Extras: ${horasExtras}\n`;
     }
 
     if (horasDevidas > 0) {
-        resultado += `Horas Devidas: ${horasDevidas}\n`;
+        resultado += `😞 Horas Devidas: ${horasDevidas}\n`;
     }
 
     document.getElementById('resultado').innerText = resultado;
+    const lista = document.getElementById('lista_funcionarios');
+    const item = document.createElement('li');
+    item.textContent = resultado.replace(/\n/g, ' | ');
+    lista.appendChild(item);
+    return false;
+
 }
