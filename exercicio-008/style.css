@@ -1,0 +1,155 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #161616;
+    }
+
+    .header {
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: #161616;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: #d3d3d3;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto 20px auto;
+        border: 2px solid #4CAF50;
+        background-color: #2c2c2c;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, box-shadow 0.3s;
+
+    }
+
+    h1 {
+        color: #d3d3d3;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #2c2c2c;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: #d3d3d3;
+        border: 1px solid #ccc;
+        border: 2px solid #4CAF50;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+        
+    }
+
+    form {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="number"] {
+        padding: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s, box-shadow 0.3s;
+        margin-bottom: 15px;
+        background-color: #f0f0f0;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding-right: 30px;
+        cursor: text;
+        box-sizing: border-box;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        
+    }
+
+    select {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px;
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23333" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 8px 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s, box-shadow 0.3s;
+
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 300px;
+        font-size: 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: 'Arial Black', Arial, sans-serif;
+        background-image: linear-gradient(45deg, #4CAF50, #45a049);
+        border: 2px solid #4CAF50;
+
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+        
+    }
+
+    #resultado {
+        font-weight: bold;
+    }
