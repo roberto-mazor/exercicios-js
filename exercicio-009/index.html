@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Exercício 009</h1>
+        <blockquote>009 Exibindo uma mensagem várias vezes.</blockquote>
+        <blockquote>A missão consiste em repetir uma mesma frase uma certa quantidade de vezes. Nós já fizemos isso no exemplo sobre laço de repetição, para essa missão vamos perguntar para o usuário quantas vezes ele quer repetir a mensagem.
+Vamos criar uma variável para ser nosso contador e perguntar quantas vezes ele deseja repetir a mensagem.</blockquote>
+    </div>
+    <div class="container">
+        <form action="">
+            <label for="mensagem">Mensagem:</label>
+            <input type="text" id="mensagem" name="mensagem" required>
+            <br>
+            <label for="quantidade">Quantidade de vezes:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+            <br>
+            <input type="button" onclick="fnRepetirMensagem()" value="Repetir Mensagem">
+            <!-- <ol id="resultado"></ol> -->
+        </form>
+        <div id="resultado"></div>
+         
+    <script src="app.js"></script>
+</body>
+</html>
