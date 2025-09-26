@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 010</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Exercício 010</h1>
+        <blockquote>10 Calcular a média de N alunos.</blockquote>
+        <blockquote>Vamos fazer um programa para calcular a média de um aluno. Ao apresentar o resultado, o programa deve perguntar se gostaria de calcular a média de outro aluno, caso a resposta seja SIM, o programa deve executar novamente.
+Declare as variáveis que irão armazenar o nome, as notas e a média do aluno.</blockquote>
+    </div>
+    <div class="container">
+        <form action="" id="formMedia">
+            <label for="nome">Nome do Aluno:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" name="nota1" step="0.01" required>
+            <br>
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" name="nota2" step="0.01" required>
+            <br>
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" name="nota3" step="0.01" required>
+            <br>
+            <label for="nota4">Nota 4:</label>
+            <input type="number" id="nota4" name="nota4" step="0.01" required>
+            <br>
+            <input type="button" onclick="fnCalcularMedia()" value="Calcular Média">
+        </form>
+        <div id="resultado"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
