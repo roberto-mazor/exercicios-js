@@ -1,10 +1,21 @@
-// Função que oculta o formulário e exibe o resultado
 function fnResultado() {
     document.getElementById("resultado").style.display = "block";
     document.getElementById("formMedia").style.display = "none";
 }
 
-// Função principal para calcular a média
+function fnNovoCalculo() {
+    // Limpa os campos
+    document.getElementById("nome").value = "";
+    document.getElementById("nota1").value = "";
+    document.getElementById("nota2").value = "";
+    document.getElementById("nota3").value = "";
+    document.getElementById("nota4").value = "";
+
+    // Exibe o formulário e oculta o resultado
+    document.getElementById("formMedia").style.display = "block";
+    document.getElementById("resultado").style.display = "none";
+}
+
 function fnCalcularMedia() {
     let nome = document.getElementById("nome").value;
     let nota1 = parseFloat(document.getElementById("nota1").value);
@@ -17,21 +28,8 @@ function fnCalcularMedia() {
     resultadoDiv.innerHTML = "<h2>Resultado</h2>";
     resultadoDiv.innerHTML += "<p>👤 Nome: " + nome + "</p>";
     resultadoDiv.innerHTML += "<p>📝 Média: " + media.toFixed(2) + "</p>";
+    resultadoDiv.innerHTML += '<button id="btnNovoCalculo" onclick="fnNovoCalculo()" style="margin-top: 10px;">Novo Cálculo</button>';
 
     fnResultado();
-
-    // Pergunta se deseja calcular novamente
-    if (confirm("Gostaria de calcular a média de outro aluno?")) {
-        // Limpa os campos
-        document.getElementById("nome").value = "";
-        document.getElementById("nota1").value = "";
-        document.getElementById("nota2").value = "";
-        document.getElementById("nota3").value = "";
-        document.getElementById("nota4").value = "";
-
-        // Exibe o formulário novamente e oculta o resultado
-        document.getElementById("formMedia").style.display = "block";
-        resultadoDiv.innerHTML = "";
-        resultadoDiv.style.display = "none";
-    }
 }
+
