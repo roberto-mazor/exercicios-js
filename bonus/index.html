@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício Bonus</title>
+</head>
+<body onkeydown="fnTocarSom(event.keyCode)">
+    <div class="header">
+        <h1>Exercício Bônus</h1>
+        <blockquote>Vamos criar uma bateria eletrônica com JavaScript puro.</blockquote>
+        <blockquote>Ao pressionar as teclas A, S, D, F, G, H, J, K e L do teclado, você deverá ouvir sons de bateria. Cada tecla deve estar associada a um som diferente. Você pode usar os sons que desejar, mas aqui estão alguns exemplos:</blockquote>
+    </div>
+    <div class="tecla">
+            A - clap
+        </div>
+    <div class="tecla">
+        S - Boom
+    </div>
+    <div class="tecla">
+        D - HiHat
+    </div>
+    <div class="tecla">
+        F - Kick
+    </div>
+    <div class="tecla">
+        G - OpenHat
+    </div>
+    <div class="tecla">
+        H - Ride
+    </div>
+    <div class="tecla">
+        J - Snare
+    </div>
+    <div class="tecla">
+        K - Tink
+    </div>
+    <div class="tecla">
+        L - Tom
+    </div>
+    <audio src="sounds/clap.wav" id="som-65"></audio>
+    <audio src="sounds/boom.wav" id="som-83"></audio>
+    <audio src="sounds/hihat.wav" id="som-68"></audio>
+    <audio src="sounds/kick.wav" id="som-70"></audio>
+    <audio src="sounds/openhat.wav" id="som-71"></audio>
+    <audio src="sounds/ride.wav" id="som-72"></audio>
+    <audio src="sounds/snare.wav" id="som-74"></audio>
+    <audio src="sounds/tink.wav" id="som-75"></audio>
+    <audio src="sounds/tom.wav" id="som-76"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
