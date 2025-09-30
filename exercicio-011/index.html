@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Exercício 11</h1>
+        <blockquote>
+            <p>
+                Nosso programa vai calcular a média de quantos números o usuário quiser digitar. Relembrando o cálculo
+                da média é a SOMA DE TODOS OS NÚMEROS DIVIDIDO PELA QUANTIDADE DE NÚMEROS. Por exemplo, se eu tenho 3
+                números, a média é a soma desses 3 números dividido por 3. <br /><br />
+                No nosso programa depois de digitar o número será perguntado se o usuário deseja digitar outro número,
+                se ele disser que SIM, aparece a opção para inserir um novo número, se disser que não será exibido a
+                média <br><br />
+                Primeiro, vamos declarar as variáveis que irão armazenar a quantidade de números que o usuário digitou,
+                a variável que vai armazenar se o usuário irá inserir um novo número, a variável que irá armazenar a
+                média, a variável que vai armazenar a soma total dos números digitados e por último a variável que vai
+                armazenar o número atual digitado.<br /><br />
+            </p>
+        </blockquote>
+    </div>
+    <div id="container">
+        <form id="formMedia">
+            <label for="number">Digite um número:</label>
+            <input type="number" id="number" required>
+            <h3>Média<span id="formMedia"></span></h3>
+            <button id="start">Novo número</button>
+            <button id="finish">Calcular média</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
