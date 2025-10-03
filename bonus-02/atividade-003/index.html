@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Galeria</title>
+	<meta charset="utf8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/biblioteca.js" defer></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<section id="banner">
+				<img
+					id="banner-img"
+					src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt="Banner"
+				/>
+				
+				<a href="#" class="pause controle" onclick="Controle('pause');"></a>
+				<a href="#" class="play controle" onclick="Controle('play');"></a>
+
+			</section>
+			<nav id="menu">
+				<a href="#" onclick="Controle('pause');">Pausar</a>
+				<a href="#" onclick="Controle('play');">Continuar</a>
+			</nav>
+		</header>
+		<div id="conteudo">
+			<!-- área de conteudo do site -->
+		</div>
+		<footer id="rodape">
+			<!-- área de rodapé do site -->
+		</footer>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
