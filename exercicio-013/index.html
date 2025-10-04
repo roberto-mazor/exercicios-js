@@ -10,20 +10,52 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>Exercício 13</h1>
-        <blockquote>
-            <p>
-                <br><br>Armazenando lista de carros de um estacionamento 
-            </p>
-        </blockquote>
-    </div>
-    <div id="container">
-        <button id="start"></button>
-        <div id="resultado"></div>
+    <div class="container">
+        <div id="header">
+            <h1 class="text-md-center text-end">Exercício 13</h1>
+            <blockquote>
+                <p>
+                    <br><br>Armazenando lista de carros de um estacionamento
+                </p>
+            </blockquote>
+        </div>
+        <div class="row mb-3">
+            <div class="row border-primary border rounded p-3">
+                <div class="col-12 col-md-4">Texto 1</div>
+                <div class="col-12 col-md-4">Texto 2</div>
+                <div class="col-12 col-md-4">Texto 3</div>
+            </div>
+
+            <table class="table table-primary table-striped table-hover mt-5">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Placa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carro 1</td>
+                        <td>ABC-1234</td>
+                    </tr>
+                    <tr>
+                        <td>Carro 2</td>
+                        <td>DEF-5678</td>
+                    </tr>
+                    <tr>
+                        <td>Carro 3</td>
+                        <td>GHI-9012</td>
+                </tbody>
+            </table>
+
+        </div>
+        <div>
+            <button id="start" class="btn btn-primary btn-lg p-3">Iniciar</button>
+            <div id="resultado"></div>
+        </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 
