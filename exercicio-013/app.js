@@ -24,3 +24,11 @@ function fnLimpar() {
     veiculos = []
     fnListarVeiculos()
  }
+
+ // botão para limpar a tabela feita na função fnListarVeiculos
+ function fnLimparTabela() {
+    document.getElementById("tabela_veiculos").innerHTML = ""
+    numeroDeVagas = []
+    veiculos = []
+ }
+
