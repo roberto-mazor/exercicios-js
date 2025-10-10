@@ -1,0 +1,31 @@
+
+.card {
+    /* Deixa a borda do card mais arredondada */
+    border-radius: 15px !important; 
+}
+.card-header {
+    /* Arredonda o cabeçalho no topo, combinando com o card */
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+/* Garante que o contêiner da imagem tenha um tamanho mínimo para evitar saltos de layout */
+.pokemon-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Ajuste a altura conforme necessário para a sua imagem */
+    height: 200px; 
+}
+
+/* Estilo para simular o efeito do botão principal do Pokémon (Opcional) */
+.btn-warning {
+    background-color: #ffcb05; /* Amarelo Pokémon */
+    border-color: #3d79b2;     /* Azul Pokémon */
+    color: #3d79b2;            /* Texto Azul */
+}
+.btn-warning:hover {
+    background-color: #e5b704;
+}
+
+
