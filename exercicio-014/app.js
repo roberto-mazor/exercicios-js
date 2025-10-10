@@ -1,4 +1,4 @@
-const timesBrasileirao2025= [
+const timesBrasileirao2025 = [
   "Atlético-MG",
   "Bahia",
   "Botafogo",
@@ -56,10 +56,13 @@ console.dir("Cidades dos times do Brasileirão 2025:");
 // Exemplo: console.log(timesBrasileirao2025[0] + " é de " + cidadesBrasileirao2025[0]);
 
 function fnlistaTimes() {
-    document.getElementById("lista_times").innerHTML = `
-    <div class="col-6 border text-center">${timesBrasileirao2025[0]}</div>
-    `    
+    for (let i=0; i < timesBrasileirao2025.length; i++) {
+        document.getElementById("lista_times").innerHTML += `
+        <div class="col-6 border-bottom border-dark text-center">
+            ${timesBrasileirao2025[i]} - ${cidadesBrasileirao2025[i]}
+        </div>
+        `;
+  }
 }
 
 fnlistaTimes();
-
