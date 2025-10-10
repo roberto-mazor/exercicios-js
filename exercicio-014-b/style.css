@@ -28,4 +28,14 @@
     background-color: #e5b704;
 }
 
-
+.esconder-numero {
+    background-color: #212529;
+}
+ 
+.esconder-nome {
+    background-color: #212529;
+}
+ 
+.esconder-foto {
+    filter: brightness(0);
+}

@@ -244,4 +244,17 @@ function fnPokemonAleatorio() {
     return pokemonSorteado;
 }
 
+function fnEsconderPokemon() {
+    document.getElementById("numero").classList.add("esconder-numero");
+    document.getElementById("nome").classList.add("esconder-nome");
+    document.getElementById("foto").classList.add("esconder-foto");
+}
+
+function fnMostrarPokemon() {
+    document.getElementById("numero").classList.remove("esconder-numero");
+    document.getElementById("nome").classList.remove("esconder-nome");
+    document.getElementById("foto").classList.remove("esconder-foto");
+}
+
 fnListarPokemon();
+fnEsconderPokemon();
