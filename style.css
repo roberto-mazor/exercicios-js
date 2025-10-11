@@ -1,3 +1,35 @@
-.card1 {
-    background-color: bisque;
+:root {
+  /* 🎨 Cores Neutras e Sofisticadas */
+  --cinza-escuro: #2E2E2E;
+  --grafite: #3C3C3C;
+  --cinza-fosco: #4F4F4F;
+  --preto-intenso: #121212;
+  --bege-escuro: #7A6A58;
+
+  /* 🌈 Cores Vibrantes e Atraentes (versões escuras) */
+  --azul-profundo: #005F99;
+  --verde-musgo: #3A5F3A;
+  --laranja-queimado: #B3472D;
+  --amarelo-escuro: #B8860B;
+  --roxo-escuro: #4B0082;
+
+  /* 🧁 Tons Pastel Escurecidos */
+  --rosa-antigo: #8B5F65;
+  --azul-fumê: #5A7D8A;
+  --verde-musgo-claro: #6B8E23;
+  --lilas-escuro: #6A5ACD;
+  --pessego-escuro: #A0522D;
+
+  /* 🪨 Tons Terrosos e Naturais */
+  --terracota-escura: #8B3E2F;
+  --verde-oliva-escuro: #556B2F;
+  --marrom-profundo: #5C4033;
+  --azul-petroleo-escuro: #2C3E50;
+  --verde-floresta-escuro: #013220;
+}
+
+
+
+.corCard {
+
 }
