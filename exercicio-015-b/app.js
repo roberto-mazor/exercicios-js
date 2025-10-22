@@ -19,9 +19,6 @@ let pokemon3 = {
     nivel: 5
 };
 
-// exemplificando o uso de Object.assign
-let pokemon4 = Object.assign({}, pokemon1);
-pokemon4.nome = 'Charmeleon';
-pokemon4.nivel = 16;
-console.log(pokemon1);
-console.log(pokemon4);
+// exemplificando o uso de Objecto
+
+console.log(pokemon1.nome);

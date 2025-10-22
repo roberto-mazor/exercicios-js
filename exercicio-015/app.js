@@ -1,57 +1,69 @@
 
-    // Logica para adicionar um contato
+    // Logica para adicionar um contato usando foreach e listagem na tela index.html, no final de cada contato um botão de remover contato
 
 let objectContacts = [];
 
-function addContact(name, email, phone, photo) {
+const btnAddContact = document.getElementById('btn-add-contact');
+
+btnAddContact.addEventListener('click', function() {
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('phone');
+    const photoInput = document.getElementById('photo');
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const phone = phoneInput.value;
+    const photo = photoInput.value;
     const newContact = {
-        id: objectContacts.length + 1,
         name: name,
         email: email,
         phone: phone,
         photo: photo
     };
     objectContacts.push(newContact);
-    fnListar();
-}
+    nameInput.value = '';
+    emailInput.value = '';
+    phoneInput.value = '';
+    photoInput.value = '';
+    renderContacts();
+});
 
-function fnSalvar() {
-    document.getElementById('btn-add-contact').addEventListener('click', function(event) {
-        event.preventDefault();
-
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const photo = document.getElementById('photo').value;
-
-        addContact(name, email, phone, photo);
-        document.getElementById('contact-form').reset();
-    });
-}
-
-
-function fnListar() {
-    // Lógica para listar os contatos
+function renderContacts() {
     const contactList = document.getElementById('contact-list');
     contactList.innerHTML = '';
 
-    objectContacts.forEach(contact => {
-        const li = document.createElement('li');
-        li.className = 'list-group-item d-flex justify-content-between align-items-center mb-2';
-        li.innerHTML = '<img src="' + contact.photo + '" alt="Foto de ' + contact.name + '" class="rounded-circle me-3" width="50" height="50">' +
-                       '<div><h5>' + contact.name + '</h5><p>' + contact.email + ' | ' + contact.phone + '</p></div>' +
-                       '<button class="btn btn-danger btn-sm" onclick="fnExcluir(' + contact.id + ')">Excluir</button>';
-        contactList.appendChild(li);
+    objectContacts.forEach(function(contact, index) {
+        const contactItem = document.createElement('div');
+        contactItem.classList.add('contact-item');
+        contactItem.innerHTML = `
+      <div class="card-image-container">
+                <img src="${contact.photo}" alt="Foto de ${contact.name}" class="card-photo img-thumbnail" />
+            </div>
+
+            <div class="card-content">
+                <h3 class="card-title">${contact.name}</h3>
+                
+                <div class="contact-details">
+                    <p class="contact-email">📧 ${contact.email}</p>
+                    <p class="contact-phone">📞 ${contact.phone}</p>
+                </div>
+
+                <div class="card-actions">
+                    <button class="btn btn-danger btn-remove-contact" data-index="${index}">
+                        Remover Contato
+                    </button>
+                </div>
+            </div>
+        `;
+        contactList.appendChild(contactItem);
+    });
+
+    const btnRemoveContact = document.querySelectorAll('.btn-remove-contact');
+    btnRemoveContact.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const index = button.getAttribute('data-index');
+            objectContacts.splice(index, 1);
+            renderContacts();
+        });
     });
 }
-
-function fnExcluir(id) {
-    // Lógica para excluir um contato
-    objectContacts = objectContacts.filter(contact => contact.id !== id);
-    fnListar();
-}
-
-// Inicialização
-fnSalvar();
-fnListar();
-
