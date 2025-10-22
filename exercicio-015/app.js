@@ -36,10 +36,10 @@ function renderContacts() {
         const contactItem = document.createElement('div');
         contactItem.classList.add('contact-item');
         contactItem.innerHTML = `
-      <div class="card-image-container">
+    <div class="card-image-container mt-4" img-tumbnail>
                 <img src="${contact.photo}" alt="Foto de ${contact.name}" class="card-photo img-thumbnail" />
-            </div>
-
+            
+    </div>
             <div class="card-content">
                 <h3 class="card-title">${contact.name}</h3>
                 
@@ -53,7 +53,7 @@ function renderContacts() {
                         Remover Contato
                     </button>
                 </div>
-            </div>
+     </div>
         `;
         contactList.appendChild(contactItem);
     });
