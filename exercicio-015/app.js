@@ -36,25 +36,36 @@ function renderContacts() {
         const contactItem = document.createElement('div');
         contactItem.classList.add('contact-item');
         contactItem.innerHTML = `
-    <div class="card-image-container mt-4" img-tumbnail>
-                <img src="${contact.photo}" alt="Foto de ${contact.name}" class="card-photo img-thumbnail" />
-            
-    </div>
-            <div class="card-content">
-                <h3 class="card-title">${contact.name}</h3>
-                
-                <div class="contact-details">
-                    <p class="contact-email">📧 ${contact.email}</p>
-                    <p class="contact-phone">📞 ${contact.phone}</p>
-                </div>
+    <div class="card shadow-sm mb-4" style="width: 18rem;">
+    <div class="card-body text-center">
+        
+        <img src="${contact.photo}" 
+             alt="Foto de ${contact.name}" 
+             class="rounded-circle img-thumbnail mx-auto d-block mb-3"
+             style="width: 100px; height: 100px; object-fit: cover;"
+             onerror="this.src='https://via.placeholder.com/100'" 
+             />
+        
+        <h5 class="card-title">${contact.name}</h5>
+        
+        <div class="contact-details mb-3">
+            <p class="card-text text-muted mb-1">
+                <span class="me-2">📧</span>${contact.email}
+            </p>
+            <p class="card-text text-muted">
+                <span class="me-2">📞</span>${contact.phone}
+            </p>
+        </div>
+        
+        <div class="card-actions">
+            <button class="btn btn-danger w-100 btn-remove-contact" data-index="${index}">
+                Remover Contato
+            </button>
+        </div>
 
-                <div class="card-actions">
-                    <button class="btn btn-danger btn-remove-contact" data-index="${index}">
-                        Remover Contato
-                    </button>
-                </div>
-     </div>
-        `;
+    </div>
+</div>
+`;
         contactList.appendChild(contactItem);
     });
 
