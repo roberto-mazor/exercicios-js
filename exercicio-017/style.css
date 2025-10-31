@@ -1,0 +1,68 @@
+/* === Estilo Geral === */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* === Estilo das estrelas === */
+.star-rating {
+  display: inline-flex;
+  flex-direction: row-reverse; /* importante p/ CSS do hover */
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.star-rating input {
+  display: none; /* esconde os radios */
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+  color: #f5b301; /* cor da estrela ativa */
+  transform: scale(1.1);
+}
+
+/* === Ajuste para alinhar Data e Avaliação === */
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-row .form-group {
+  margin-bottom: 0;
+}
+
+#ano {
+  max-width: 180px; /* reduz tamanho do campo data */
+}
+
+.form-row .star-rating {
+  font-size: 1.8rem;
+  margin-top: 5px;
+}
+
+/* === Cards dos filmes exibidos === */
+.filme-card {
+  margin-top: 20px;
+}
+
+.filme-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* === Layout extra === */
+blockquote {
+  font-size: 1rem;
+  color: #555;
+  border-left: 4px solid #007bff;
+  padding-left: 12px;
+}
