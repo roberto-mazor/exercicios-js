@@ -78,13 +78,18 @@
             <textarea class="form-control" id="sinopse" rows="3" required></textarea>
           </div>
 
-          <button type="button" id="btnSalvarFilme" class="btn btn-primary btn-block">Salvar Filme</button>
-        </form>
+          <button type="button" class="btn btn-primary btn-block" onclick="salvarFilme()">Salvar Filme</button>
 
-        <div id="listaFilmes" class="mt-4"></div>
+        </form>
       </div>
     </div>
   </div>
+  <!-- Container separado para os cards -->
+<div class="container-fluid mt-5 px-5">
+  <h3 class="mb-4">Filmes Cadastrados</h3>
+  <div id="listaFilmes" class="d-flex flex-wrap justify-content-start"></div>
+</div>
+
 
   <!-- Seu arquivo JS externo -->
   <script src="app.js"></script>
