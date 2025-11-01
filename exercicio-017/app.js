@@ -4,7 +4,7 @@
 const filmesExemplo = [
   {
     nome: "The Witcher",
-    url: "https://image.tmdb.org/t/p/w500/ueu6FzGg1Y5TDehPEx0r3EXtL7F.jpg",
+    url: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uJ1kQWTY1nElMcrrbHtDitbV85K.jpg",
     ano: "2019-12-20",
     trailer: "https://www.youtube.com/watch?v=tjujvMkqWe4",
     genero: "Fantasia, Ação, Aventura",
@@ -15,7 +15,7 @@ const filmesExemplo = [
   },
   {
     nome: "Breaking Bad",
-    url: "https://image.tmdb.org/t/p/w500/eSzpy96DwBujGFj0xMbXBcGcfxX.jpg",
+    url: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hGwm9Cj3CdbJIqQWNExQqiYmCd4.jpg",
     ano: "2008-01-20",
     trailer: "https://www.youtube.com/watch?v=HhesaQXLuRY",
     genero: "Drama, Crime, Thriller",
